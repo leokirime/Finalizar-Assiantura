@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assinatura</title>
+</head>
+<body>
+
+<header>    
+    <h1>Finalizar Assinatura</h1>
+    <p>Escolha o plano que melhor lhe atende</p>
+</header>
+
+<main class="container">
+
+    <!--Coluna esquerda-->
+    <div>
+        <section class="section">
+
+            <h2>Selecione um plano</h2>
+            <div class="planos">
+                <label class="planos">
+                    <input type="radio" name="plano" value="mensal" checked>
+                    <h3> Mensal </h3>
+                    <p class="preco"> 29,90</p>
+                    <ul>
+                        <li>Acesso ilimitado a todos os conteúdos</li>
+                        <li>Cancelamento a qualquer momento</li>
+                        <li>Suporte 24/7</li>
+                    </ul>
+                </label>
+
+                <label class="planos">
+                    <input type="radio" name="plano" value="anual">
+                    <h3> Anual </h3>
+                    <p class="preco"> 199,90</p>
+                    <ul>
+                        <li>Acesso ilimitado a todos os conteúdos</li>
+                        <li>Cancelamento a qualquer momento</li>
+                        <li>Suporte 24/7</li>
+                        <li>2 meses grátis</li>
+                    </ul>
+                </label>
+            </div>
+        </section>
+
+        <!--Dados Pessoais-->
+        <section class="section">
+            <h2>Dados Pessoais</h2>
+            <form>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">CPF:</label>
+                <input type="text" id="CPF" name="text" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </form>
+        </section>
+
+        <!--Dados de Pagamento-->
+
+        <div class="container-pagamento">
+            <div class="title">Forma de Pagamento</div>
+    
+        <div class="options-group">
+            <div class="option-item">
+                <input type="radio" id="cartao" name="pagamento" checked>
+                <label for="cartao">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                    Cartão de Crédito
+                </label>
+            </div>
+
+            <div class="option-item">
+                <input type="radio" id="transferencia" name="pagamento">
+                <label for="transferencia">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M3 10h18"></path><path d="M5 6l7-3 7 3"></path><path d="M4 10v11"></path><path d="M20 10v11"></path></svg>
+                    Transferência Bancária
+                </label>
+            </div>
+
+            <div class="option-item">
+                <input type="radio" id="pontos" name="pagamento">
+                <label for="pontos">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    Usar Pontos
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Coluna direita-->
+
+    <aside class="section">
+        <h2> Resumo da Assinatura </h2>
+        <div class="sumario">
+            <div>
+                <span>Plano</span>
+                <span>Mensal</span>
+            </div>
+
+            <div>
+                <span>Preço</span>
+                <span>R$29,90</span>
+            </div>
+        </div>
+
+        <button class="btn-assinar"> Finalizar Compra </button>
+    </aside>
+</main>
+
+</body>
+</html>
