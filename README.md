@@ -16,7 +16,7 @@ Ideal para plataformas **SaaS, serviços por assinatura, cursos online e aplica�
 
 ## 🚀 Funcionalidades
 
-- 📊 Exibição clara dos planos (Básico, Pro, Premium, etc.)
+- 📊 Exibição clara dos planos (Mensal / Anual)
 - 💳 Integração com métodos de pagamento
 - 🔁 Suporte a planos mensais e anuais
 - 🔐 Ambiente seguro para pagamentos
