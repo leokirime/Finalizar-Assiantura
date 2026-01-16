@@ -385,3 +385,98 @@ input:focus {
 .btn-assinar:active {
     transform: translateY(-1px);
 }
+
+/* ============================
+   RESPONSIVIDADE
+   ============================ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .planos {
+        flex-wrap: wrap;
+    }
+
+    .planos label {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    .section,
+    .container-pagamento {
+        padding: 22px;
+    }
+
+    .planos {
+        flex-direction: column;
+    }
+
+    .planos label {
+        flex: 1 1 100%;
+    }
+
+    .sumario > div {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+    }
+
+    .btn-assinar {
+        font-size: 1.1rem;
+        padding: 16px;
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+
+    header {
+        padding: 28px 16px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .section h2,
+    .container-pagamento .title {
+        font-size: 1.3rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        font-size: 1rem;
+        padding: 14px;
+    }
+
+    .option-item label {
+        padding: 14px 16px;
+    }
+
+    .preco {
+        font-size: 26px;
+    }
+}
+
